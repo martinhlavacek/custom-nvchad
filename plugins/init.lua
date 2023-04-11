@@ -2,7 +2,15 @@ return {
   --[[======================================================
                 Configure builtin plugins
   ========================================================]]
-  { "NvChad/nvterm", enabled = false },
+  { "NvChad/nvterm", enabled = true },
+  { 
+    "zbirenbaum/copilot.lua",
+      cmd = "Copilot",
+      event = "InsertEnter",
+      config = function()
+        require("copilot").setup({})
+      end,
+  },
   {
     "NvChad/nvim-colorizer.lua",
     opts = {

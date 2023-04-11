@@ -14,6 +14,7 @@ M.user = {
     ["<Esc>"] = { ":noh <CR>", "clear highlights", opts = { silent = true } },
     ["<leader>qq"] = { ":q<CR>", "close window", opts = { silent = true } },
     ["<leader>qa"] = { ":qa<CR>", "close all", opts = { silent = true } },
+    ["<leader>w"] = { ":w<CR>", "write file", opts = { silent = true } },
     ["<leader>sr"] = {
       function()
         require("ssr").open()

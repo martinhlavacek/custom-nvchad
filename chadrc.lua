@@ -3,7 +3,7 @@ local M = {}
 M.mappings = require "custom.mappings"
 
 M.ui = {
-  theme = "onenord",
+  theme = "tokyodark",
   statusline = {
     overriden_modules = function()
       return {
